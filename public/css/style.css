@@ -1,0 +1,463 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+   body{line-height:1}
+   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+   nav ul{list-style:none}
+   blockquote,q{quotes:none}
+   blockquote:before,blockquote:after,q:before,q:after{content:none}
+   a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+   del{text-decoration:line-through}
+   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+   table{border-collapse:collapse;border-spacing:0}
+   hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+   input,select{vertical-align:middle}
+   li{list-style:none}
+   
+   
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,800');
+
+body {
+  font-family: monospace;
+  width: 100%;
+}
+
+p {
+  margin-left: 30px;
+  margin-bottom: -10px;
+  font-size: 20px;
+}
+
+button {
+  font-size: 1em;
+  font-family: monospace;
+  background-color: #f8bbd0;
+  cursor: pointer;
+  border-width: 0em;
+  padding: .5em;
+  border-style: solid;
+  color: #fff;
+}
+
+.purple {
+  background-color: #a7a6ff;
+}
+
+.blue {
+  background-color: #86c5ff;
+}
+
+.green {
+  background-color: #99b1ff;
+}
+
+#links {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 60px;
+  text-align: right;
+}
+
+#name {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  margin-left: 40px;
+  display: block;
+}
+
+.about {
+    height: 1000px;
+    margin-left: 40px;
+    display: block;
+}
+
+.projects {
+    height: 1000px;
+    margin-left: 40px;
+    display: block;
+}
+
+.contact {
+    height: 300px;
+    margin-left: 40px;
+    display: block;
+}
+
+.letter {
+  font-size: 200px;
+  line-height: 110px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  letter-spacing: -20px;
+  mix-blend-mode: color-burn;
+  position: relative;
+  transition: top ease 0.1s;
+  transition-delay: 2s;
+  opacity: 0.9;
+}
+
+
+#a {
+color: #2196f3;
+  }
+
+#b {
+color: #72d7da;
+  }
+
+#c {
+color: #72d7da;
+}
+
+#d {
+color: #5866ce;
+  }
+
+#e {
+color: #3c7bce; 
+  }
+
+#i {
+color: #4479ff;
+  }
+
+#j {
+color: #616dc2;
+}
+
+#l {
+color: #47a9f4;
+  }
+
+#n {
+color: #00bcd4;
+  }
+
+#o {
+color: #72d7da;
+}
+
+#p {
+color: #72d7da;
+}
+
+#r {
+color: #72d7da;
+  }
+  
+#s {
+color: #3d87a2;
+  }
+
+#t {
+color: #72d7da;
+}
+
+#u {
+color: #51c2b3;
+}
+
+
+
+/*this is the code relevent to keyframes and CSS animations//*/
+@keyframes mymove {
+    0% {
+      top: 0px;  
+    }
+    50% {
+      top: 100px;
+    }
+    100% {
+      top: 0px;
+  }
+}
+ 
+.hovered {
+  animation: mymove 3s;
+}
+
+::selection {
+  background: #b39ddb;
+}
+
+/*This is where the parallax code goes //*/
+
+.parallax { 
+    /* The image used */
+    /* background-image: url("../public/images/fungi.jpg"); */
+
+    /* Set a specific height */
+    height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+
+/* <--------PARALLAX CSS------------> */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7, 
+.bgimg-8,
+.bgimg-9,
+.bgimg-10,
+.bgimg-11 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .bgimg-1 {
+    background-image: url("../images/volcano1.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("../images/volcano2.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("../images/volcano3.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("../images/volcano4.jpg");
+    min-height: 400px;
+}
+
+.bgimg-5 {
+    background-image: url("../images/volcano5.jpg");
+    min-height: 400px;
+}
+
+.bgimg-6 {
+    background-image: url("../images/volcano6.jpg");
+    min-height: 400px;
+}
+
+.bgimg-7 {
+    background-image: url("../images/volcano7.jpg");
+    min-height: 400px;
+} */
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7, 
+    .bgimg-8,
+    .bgimg-9,
+    .bgimg-10,
+    .bgimg-11 {
+        background-attachment: scroll;
+    }
+}
+/* <--------PARALLAX CSS------------> */
+/* <--------PARALLAX CSS------------> */
+/* <--------PARALLAX CSS------------> */
+/* <--------PARALLAX CSS------------> */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7, 
+.bgimg-8,
+.bgimg-9,
+.bgimg-10,
+.bgimg-11 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* 400px */
+.bgimg-1 {
+    background-image: url("../images/volcano1.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("../images/volcano2.jpg");
+    min-height: 100%;
+}
+
+.bgimg-3 {
+    background-image: url("../images/volcano3.jpg");
+    min-height: 100%;
+}
+
+.bgimg-4 {
+    background-image: url("../images/volcano4.jpg");
+    min-height: 100%;
+}
+
+.bgimg-5 {
+    background-image: url("../images/volcano5.jpg");
+    min-height: 400px;
+}
+
+.bgimg-6 {
+    background-image: url("../images/volcano6.jpg");
+    min-height: 400px;
+}
+
+.bgimg-7 {
+    background-image: url("../images/volcano7.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7, 
+    .bgimg-8,
+    .bgimg-9,
+    .bgimg-10,
+    .bgimg-11 {
+        background-attachment: scroll;
+    }
+}
+/* <--------PARALLAX CSS------------> */
+/* <--------PARALLAX CSS------------> */
+/* <--------PARALLAX CSS------------> */
+/* <--------PARALLAX CSS------------> */
+
+
+
+
+
+/* SOMETHING TO TRY */
+/* SOMETHING TO TRY */
+/* SOMETHING TO TRY */
+wrapper{
+    position:relative;
+   }
+   iframe{
+     position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+   }
+
+
+/* Make particles background */
+/* Make particles background */
+#particles canvas{
+    position: absolute;
+    width: 100%;
+    z-index : 999;
+}
+
+.myclass{
+    z-index : 99999;
+    }
